@@ -48,10 +48,8 @@ const di02 = n02 % n01
 console.log(`Soma = ${so}, subtração = ${su}, multiplicação = ${mu}, divisão real = ${di01}, resto da divisão = ${di02}`)
 
 // Exercício 02
-// TODO: na aula 11, usar condição para a mensagem se ajustar sozinha
-// resto 0 → par | resto 1 → ímpar
 const exe02 = 28
-console.log(`Resto da divisão por 2 é igual a ${exe02 % 2}`)
+console.log("O número é", exe02 % 2 === 0 ? "par" : "ímpar")
 
  // Exercício 03
  const exe03 = 2 ** 10
@@ -70,3 +68,4 @@ console.log(`Resto da divisão por 2 é igual a ${exe02 % 2}`)
  // Exercício 06
  console.log(2 + 3 * 4) // 14
  console.log((2 + 3) * 4) //20
+ 
