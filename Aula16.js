@@ -98,3 +98,57 @@ e 10 + 10 dá 20.
 Só dá para usar em conta o resultado de uma função que tem return. */
 
 // Exercício 04
+function classificar(idade){
+    if (idade < 16){
+        return "Não pode votar."
+    } else if (idade < 18){
+        return "Voto facultativo."
+    } else if (idade < 70){
+        return "Voto obrigatório."
+    } else{
+        return "Voto facultativo."
+    }
+}
+
+const idadesVoto = [15, 16, 17, 18, 19, 68, 69, 70, 71]
+for(let i = 0; i < idadesVoto.length; i++){
+    const idade = idadesVoto[i]
+console.log(`${idade} - ${classificar(idade)}`)
+}
+
+// Exercício 05
+function classificar(idade){
+    if (idade < 16){
+        return "Não pode votar."
+    } else if (idade < 18){
+        return "Voto facultativo."
+    } else if (idade < 70){
+        return "Voto obrigatório."
+    } else {
+        return "Voto facultativo."
+    }
+}
+
+const idadesVoto2 = [15, 16, 17, 18, 19, 68, 69, 70, 71]
+const esperados = [
+    "Não pode votar.",
+    "Voto facultativo.",
+    "Voto facultativo.",
+    "Voto obrigatório.",
+    "Voto obrigatório.",
+    "Voto obrigatório.",
+    "Voto obrigatório.",
+    "Voto facultativo.",
+    "Voto facultativo."
+]
+for(let i = 0; i < idadesVoto2.length; i++){
+    const idade = idadesVoto2[i]
+if (classificar(idade) === esperados[i]) {
+    console.log(`OK     | ${idade}`)
+} else {
+    console.log(`FALHOU | ${idade} - saiu: ${classificar(idade)} / esperado: ${esperados[i]}`)
+}}
+
+// Teste de regressão: compara o que a função devolve com o resultado esperado,
+// caso a caso. Pegou um erro de digitação em "obrigatório" nas idades 18, 19, 68 e 69
+// que passaria despercebido numa conferência visual.
