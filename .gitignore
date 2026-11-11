@@ -14,3 +14,6 @@ playwright/.cache/
 # Arquivos que o Windows cria sozinho
 Thumbs.db
 desktop.ini
+
+# Configuração do editor — vale só para esta máquina
+.vscode/
