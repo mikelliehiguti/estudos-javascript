@@ -70,7 +70,7 @@ for(let i = 0; i <idadesVoto.length; i++){
     } else if(idade < 70){
         resultado = "Voto obrigatório."
     } else{
-        resultado = "Voto facultativo"
+        resultado = "Voto facultativo."
     }
 
     console.log(`${idade} - ${resultado}`)
