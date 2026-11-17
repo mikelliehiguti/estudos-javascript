@@ -17,3 +17,6 @@ desktop.ini
 
 # Configuração do editor — vale só para esta máquina
 .vscode/
+
+# Aquecimento de memória — rascunho diário, não faz parte do estudo
+[Aa]quecimento*.js
