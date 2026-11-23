@@ -64,3 +64,7 @@ console.log(caso33)
 const falhas = casos.filter(caso => classificar(caso.idade) !== caso.esperado)
 console.log(`${casos.length - falhas.length} passaram, ${falhas.length} falharam`)
 console.log(falhas)
+
+// O esperado do caso de 18 anos está sem o ponto final DE PROPÓSITO.
+// É a sabotagem do exercício 4: serve para provar que o teste reprova
+// quando a saída não bate com o esperado. Sem ela, os dez passam.
