@@ -36,3 +36,21 @@ async function principal(){
 principal()
 
 // Exercício 04
+async function principal2(){
+    const r = demora()
+    console.log("Exercício 04 |", r)
+}
+principal2()
+
+// Saiu: Promise { <pending> }  -  e NÃO deu erro nenhum.
+//
+// Sem o await, o lado direito não espera. O demora() devolve o comprovante
+// vazio na hora, e o = guarda o comprovante dentro do r, em vez do "pronto".
+//
+// Dá para ver na ordem do terminal: o 04 saiu antes do "Exercício 01 | dois",
+// porque não esperou. O 03, que tem await, saiu por último.
+//
+// Em Playwright esse é o defeito número um. Sem o await, o teste não para
+// para esperar a tela e segue clicando no que ainda não existe. Quando
+// quebra, quebra num lugar que não tem culpa. E às vezes nem quebra:
+// passa verde comparando um comprovante vazio com outro.
