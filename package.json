@@ -1,0 +1,23 @@
+{
+  "name": "estudos",
+  "version": "1.0.0",
+  "description": "Exercícios do meu estudo de JavaScript, com foco em automação de testes.",
+  "main": "Aquecimento.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikelliehiguti/estudos-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikelliehiguti/estudos-javascript/issues"
+  },
+  "homepage": "https://github.com/mikelliehiguti/estudos-javascript#readme",
+  "dependencies": {
+    "dayjs": "^1.11.23"
+  }
+}
